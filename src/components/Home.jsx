@@ -1,26 +1,22 @@
-import React from 'react'
-import '../App.css'
-export default function Home() {
-  return (
-    <div className="navbar">
-     <div className="container flex">
-      <h1 className="logo">COVID-19</h1>
-      <nav>
-       <ul>
-        <li>
-         <a href="#">Home</a>
-        </li>
-        <li>
-         <a href="#">Feature</a>
-        </li>
-        <li>
-         <a href="#">Guide lines</a>
-        </li>
-       </ul>
-      </nav>
+import React, { Component } from 'react'
+export default class Home extends Component {
 
-     </div>
-      
-    </div>
-  )
+  render() {
+    return (
+      <React.Fragment>
+         {/* Showcase  */}
+    <section className="showcase">
+      <div className="container-grid">
+        <div className="showcase-text">
+          <h1>About COVID-19 Pademic</h1>
+            <p>
+The coronavirus COVID-19 pandemic is the defining global health crisis of our time and the greatest challenge we have faced since World War Two. Since its emergence in Asia in 2019, the virus has spread to every continent except Antarctica.</p>
+        </div>
+      </div>
+    </section>
+      </React.Fragment>
+    )
+  }
 }
+
+

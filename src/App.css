@@ -18,7 +18,7 @@ body{
 ul{
   list-style: none;
 }
-a{
+.links{
   text-decoration: none;
   color: var(--bodyColor);
 }
@@ -42,7 +42,7 @@ height: 5rem;
 .navbar ul{
   display: flex;
 }
-.navbar a{
+.navbar .links{
   color: var(--textColor);
   padding: 0.625rem;
   margin: 0 0.313rem;

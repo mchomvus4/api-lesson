@@ -1,0 +1,19 @@
+ .grid-3{
+    grid-template-columns: repeat(3,1fr);
+ }
+ .text-center{
+   text-align: center;
+ }
+.confirmed{
+ color: var(--greenColor);
+}
+.recovered{
+ color: var(--blueColor); 
+}
+.deaths{
+ color: var(--redColor);
+}
+img{
+ height: 20%;
+ width: 20%;
+}

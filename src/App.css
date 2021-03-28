@@ -9,6 +9,12 @@
   /* navbar */
   --bgColor:#2980b9;
   --textColor: #fff;
+  /* border */
+  --borderBottom: #b4becb;
+  /* colors for api */
+  --greenColor: #1abc9c;
+  --blueColor: #3498db;
+  --redColor: #c0392b;
 }
 body{
   font-family: 'Lexend', sans-serif;
@@ -26,6 +32,7 @@ h1,h2{
   font-weight: 300;
   line-height: 1.2;
   margin: 1rem 0;
+  color: var(--bodyColor);
 }
 p{
   margin: 1rem 0;
@@ -50,15 +57,10 @@ height: 5rem;
 .navbar .flex{
   justify-content: space-between;
 }
-.container{
-  max-width: 68.75rem;
-  margin: 0 auto;
-  overflow: auto;
-  padding: 0 2.5rem;
-}
 .flex{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+  
 }

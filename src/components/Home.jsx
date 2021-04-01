@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import {fetchData} from '../api';
 import './Home.css';
 import Card from './Card';
+import Chart from './Chart';
 export default class Home extends Component {
 
   state={
@@ -53,6 +54,7 @@ The coronavirus COVID-19 pandemic is the defining global health crisis of our ti
         </p>
           <div>
             <Card data={data}/>
+            <Chart/>
           </div>     
       </div>
     </section>

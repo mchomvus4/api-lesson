@@ -18,9 +18,13 @@ export default class Home extends Component {
     this.setState({data:fetchedData });
   }
 
+    handleCountryChange = async (country)=>{
+        const fetchedData = await fetchData(country);
+      this.setState({data:fetchedData, country: country  });
+    }
   
   render() {
-    const {data}= this.state;
+    const {data, country}= this.state;
     return (
       <React.Fragment>
          {/* Showcase  */}
@@ -65,12 +69,12 @@ The coronavirus COVID-19 pandemic is the defining global health crisis of our ti
     </section>
       <section className="country">
       <div className="container_country">
-      <CountryPicker/>
+      <CountryPicker handleCountryChange ={this.handleCountryChange} />
       </div>
     </section>
     <section className="">
       <div className="container_chart">
-        <Chart/>
+        <Chart data={data} country={country}/>
       </div>
     </section>
   

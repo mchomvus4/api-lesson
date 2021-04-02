@@ -164,3 +164,9 @@ box-shadow: 0 0.188rem 0.625rem rgba(0, 0,0, 0.2);
   transform: scale(0.98);
 }
 
+@media screen and (max-width:770px){
+  .container_country,
+  .container_chart{
+    max-width: 100%;
+  }
+}

@@ -1,8 +1,11 @@
-.container{
+.container,
+.container_country,
+.container_chart{
   max-width: 68.75rem;
   margin: 0 auto;
   overflow: auto;
   padding: 0 2.5rem;
+ 
 }
 .showcase{
  height: 25rem;
@@ -67,6 +70,8 @@ margin: 1.875rem 0 ;
 /* api */
  .api{
    padding-top: 6.25rem;
+   flex-direction: column;
+   align-items: center;
  }
  .grid-3{
     grid-template-columns: repeat(3,1fr);
@@ -158,3 +163,4 @@ box-shadow: 0 0.188rem 0.625rem rgba(0, 0,0, 0.2);
 .btn:hover{
   transform: scale(0.98);
 }
+

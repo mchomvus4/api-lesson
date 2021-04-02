@@ -4,10 +4,12 @@ import {fetchData} from '../api';
 import './Home.css';
 import Card from './Card';
 import Chart from './Chart';
+import CountryPicker from './CountryPicker';
 export default class Home extends Component {
 
   state={
-    data:{}
+    data:{},
+    country:'',
   }
 
   async componentDidMount(){
@@ -15,6 +17,7 @@ export default class Home extends Component {
     
     this.setState({data:fetchedData });
   }
+
   
   render() {
     const {data}= this.state;
@@ -47,17 +50,30 @@ The coronavirus COVID-19 pandemic is the defining global health crisis of our ti
       </div>
     </section>
     {/* api inforamtion */}
+    
     <section className="api">
       <div className="container">
         <p className="api-heading text-center my-1">
            It was first identified in December 2019 in Wuhan, China. The World Health Organization declared the outbreak a Public Health Emergency of International Concern on 20 January 2020, and later a pandemic on 11 March 2020. this is the test page
         </p>
+       
           <div>
             <Card data={data}/>
-            <Chart/>
           </div>     
+          
       </div>
     </section>
+      <section className="country">
+      <div className="container_country">
+      <CountryPicker/>
+      </div>
+    </section>
+    <section className="">
+      <div className="container_chart">
+        <Chart/>
+      </div>
+    </section>
+  
       </React.Fragment>
     )
   }

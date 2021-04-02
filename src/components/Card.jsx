@@ -2,12 +2,14 @@ import React from 'react';
 import CountUp from 'react-countup';
 import image from '../images/coronavirus.png'
 import './Card.css';
+
 function Card({data: {confirmed, recovered, deaths, lastUpdate}}) {
  if(!confirmed){
   return 'Loading information....'
  }
  
   return (
+    
    <React.Fragment>
        <div className="grid grid-3 text-center my-4">
     <div>

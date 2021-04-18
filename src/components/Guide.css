@@ -1,0 +1,33 @@
+ .guide-head{
+  background: var(--bgColor);
+ } 
+ .xl,
+ .lead{
+  color: #fff;
+ }
+ .py-1{
+   padding: 1rem 0;
+ }
+ .py-2{
+   padding: 1.5rem 0;
+ }
+ .py-3{
+   padding: 2rem 0;
+ }
+ .py-4{
+   padding: 3rem 0;
+ }
+ .py-5{
+   padding: 4rem 0;
+ }
+ .guide-head img{
+  height: 12rem;
+  width: 12rem;
+  justify-self: flex-end;
+  
+ }
+
+
+
+
+ 

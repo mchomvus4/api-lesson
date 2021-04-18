@@ -12,11 +12,9 @@ export default function NavBar() {
         <li>
          <Link className="links" to='/'>Home</Link>
         </li>
+        
         <li>
-         <Link className="links" to='/feature'>Feature</Link>
-        </li>
-        <li>
-         <Link className="links" to='/guide'>Guide lines</Link>
+         <Link className="links" to='/guide'>Guide</Link>
         </li>
        </ul>
       </nav>

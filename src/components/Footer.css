@@ -2,3 +2,32 @@
  background:#2980b9;
  color: #fff;
 }
+  .py-1{
+   padding: 1rem 0;
+ }
+ .py-2{
+   padding: 1.5rem 0;
+ }
+ .py-3{
+   padding: 2rem 0;
+ }
+ .py-4{
+   padding: 3rem 0;
+ }
+ .py-5{
+   padding: 4rem 0;
+ }
+
+  .grid-3{
+    grid-template-columns: repeat(3,1fr);
+ }
+.footer_nav a{
+ margin: 0 0.625rem ;
+ color: #fff;
+ text-decoration: none;
+}
+.social a{
+ margin: 0 0.625rem ;
+ color: #fff;
+}
+ 

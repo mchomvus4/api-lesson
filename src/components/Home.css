@@ -14,7 +14,7 @@
  position: relative;
 }
 .showcase h1{
- font-size: 2.5rem;
+ font-size: 2rem;
 }
 .showcase p{
  margin: 1.25rem 0;
@@ -32,14 +32,17 @@
  grid-template-columns: 55% 45%;
  gap: 1.875rem;
 }
+.showcase-text{
+  animation: slideInFromLeft 1s ease-in;
+}
 .showcase-form{
- position: relative;
- top: 3.75rem;
- height: 21.875rem;
- width: 25rem;
- padding: 2.5rem;
- z-index: 100;
- justify-self: flex-end;
+  position: relative;
+  top: 3.75rem;
+  height: 21.875rem;
+  width: 25rem;
+  padding: 2.5rem;
+  z-index: 100;
+  animation: slideInFromRight 1s ease-in;
 }
 .showcase-form .form-control{
 margin: 1.875rem 0 ;
@@ -69,10 +72,12 @@ margin: 1.875rem 0 ;
 }
 /* api */
  .api{
-   padding-top: 6.25rem;
-   flex-direction: column;
-   align-items: center;
- }
+  padding-top: 6.25rem;
+  flex-direction: column;
+  align-items: center;
+  
+
+}
  .grid-3{
     grid-template-columns: repeat(3,1fr);
  }
@@ -164,9 +169,49 @@ box-shadow: 0 0.188rem 0.625rem rgba(0, 0,0, 0.2);
   transform: scale(0.98);
 }
 
+/* aminations */
+@keyframes slideInFromLeft{
+  0%{
+    transform: translateX(-100%);
+}
+100%{
+  transform: translateX(0);
+}
+}
+@keyframes slideInFromRight{
+  0%{
+    transform: translateX(100%);
+}
+100%{
+  transform: translateX(0);
+}
+}
+
+
+
+/* 
 @media screen and (max-width:770px){
   .container_country,
   .container_chart{
     max-width: 100%;
   }
+} */
+/* Tablet and under */
+@media(max-width: 768px){
+ .grid,
+ .showcase .grid{
+   grid-template-columns: 1fr;
+ }
+ .showcase{
+   height: auto;
+ }
+ .showcase-form{
+   justify-self: center;
+   margin: auto;
+ }
+}
+
+/* Mobile */
+@media(max-width: 500px){
+  
 }

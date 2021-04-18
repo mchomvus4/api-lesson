@@ -17,7 +17,7 @@ function App() {
         <Route path='/feature' component ={Feauture}/>
         <Route path='/guide' component ={Guide}/> 
       </Switch>
-      <Footer copy="2021" developer="Developed by Samwel Mchomvu"/>
+      <Footer copy="2021" developer="Developed by Samwel|From NOTTECH Lab"/>
     </div>
   );
 }

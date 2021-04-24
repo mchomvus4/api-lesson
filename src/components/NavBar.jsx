@@ -14,7 +14,7 @@ export default function NavBar() {
         </li>
         
         <li>
-         <Link className="links" to='/guide'>Guide</Link>
+         {/* <Link className="links" to='/guide'>Guide</Link> */}
         </li>
        </ul>
       </nav>

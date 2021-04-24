@@ -14,7 +14,7 @@ export default function Footer({copy,developer}) {
         <nav className="footer_nav">
           <ul>
             <Link to ='/'>Home</Link>
-            <Link to ='/guide'>Guide </Link>
+            {/* <Link to ='/guide'>Guide </Link> */}
           </ul>
         </nav>
         <div className="social">

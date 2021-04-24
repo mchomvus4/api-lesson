@@ -34,7 +34,7 @@ export default class Home extends Component {
           <h1>About COVID-19 Pademic</h1>
             <p>
 The coronavirus COVID-19 pandemic is the defining global health crisis of our time and the greatest challenge we have faced since World War Two. Since its emergence in Asia in 2019, the virus has spread to every continent except Antarctica.</p>
-<Link to ='/feature' className="btn btn-outline">ReadMore</Link>
+<Link to ='/' className="btn btn-outline">ReadMore</Link>
         </div>
         <div className="showcase-form card">
           <h2>Give us Feedback</h2>
